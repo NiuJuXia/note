@@ -1,1 +1,21 @@
+# JavaScript深入之从原型到原型链
 
+每一个JavaScript对象(null除外)在创建的时候就会与之关联另一个对象
+
+这个对象就是我们所说的原型，每一个对象都会从原型"继承"属性。
+
+在js里函数是可执行对象
+
+实际上就是原型对象 构造函数 实例的关系
+
+一些方法和属性 isPrototypeof()  Object.getPrototypeOf()  Object.setPrototypeOf()  _proto_
+  
+constructor  prototype  hasOwnProperty  in
+
+当读取实例的属性时，如果找不到，就会查找与对象关联的原型中的属性，
+
+就去找原型的原型，一直找到最顶层为止
+
+原型链 ： 实例的原型对象是另一个原型对象的实例，一直串联下去
+
+![原型链示意图](https://github.com/mqyqingfeng/Blog/raw/master/Images/prototype5.png)
