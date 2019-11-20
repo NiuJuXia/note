@@ -5,6 +5,7 @@ new 运算符创建一个用户定义的对象类型的实例或具有构造函�
 3: apply
 4:返回对象
 
+```js
  function objectFactory(Constructor,...remain) {
 
        var obj = new Object()
@@ -18,3 +19,4 @@ new 运算符创建一个用户定义的对象类型的实例或具有构造函�
       return typeof ret === 'object' ? ret : obj;
 
    }
+```
