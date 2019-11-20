@@ -7,7 +7,7 @@ bind() 方法会创建一个新函数。当这个新函数被调用时，bind() 
 3:传入参数(保存参数)
 4:一个绑定函数也能使用new操作符创建对象：这种行为就像把原函数当成构造器。（注意原型的传递）
 5：提供的 this 值被忽略，同时调用时的参数被提供给模拟函数。
-
+```js
 Function.prototype.bind2 = function (context,...next1) {
     var self = this;
     var fNOP = function () {};
@@ -19,3 +19,4 @@ Function.prototype.bind2 = function (context,...next1) {
      fBound.prototype = new fNOP();
      return fBound;
 }
+```
