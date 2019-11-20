@@ -9,7 +9,7 @@
 4:导参
 5:this 参数可以传 null，当为 null 的时候，视为指向 window
 6:函数是可以有返回值的！
-
+```js
 Function.prototype.call2 = function(context,...less) {
   var context = context || window;
   context.fn = this;
@@ -17,3 +17,4 @@ Function.prototype.call2 = function(context,...less) {
   delete context.fn;
   return   result
 }
+```
