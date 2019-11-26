@@ -55,6 +55,7 @@ function throttle(func, wait) {
 第一种事件停止触发后没有办法再执行事件，第二种事件停止触发后依然会再执行一次事件
 
 ##有头有尾
+```js
 function throttle3(func, wait) {
     var timeout, context, args, result;
     var previous = 0;
@@ -85,6 +86,7 @@ function throttle3(func, wait) {
     };
     return throttled;
 }
+```
 
 ##优化
 但是我有时也希望无头有尾，或者有头无尾，这个咋办？
