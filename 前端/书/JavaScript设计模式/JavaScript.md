@@ -1,6 +1,6 @@
-#第一章JavaScript
+# 第一章JavaScript
 
-##尽量少的创建全局变量（放在对象或函数里）
+## 尽量少的创建全局变量（放在对象或函数里）
 ```js
 const CheckObject = function(){};
 CheckObject.prototype = {
