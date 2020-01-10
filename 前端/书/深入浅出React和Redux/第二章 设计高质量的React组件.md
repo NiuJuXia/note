@@ -34,4 +34,29 @@ state
 
 分别在render函数前后,componentDidMount被调用时组件已经被装载到DOM树上了
 
+## 更新过程
+
+1 componentWillReceiveProps(nextProps)
+
+当父组件的render函数被调用,在render函数里面被渲染的子组件就会经历更新过程,触发此函数
+
+2 shouldComponentUpdate(nextProps, nextState)
+
+返回一个布尔值,告诉React是否继续更新
+
+在以上两个函数中,函数内部可以用this.props和this.status取得之前的值
+
+3 componentWillUpdate和componentDidUpdate
+
+分别在render函数前后
+
+## 卸载过程
+
+componentWillUnmount
+
+# 组件向外传递数据
+
+通过函数参数传递
+
+
 
