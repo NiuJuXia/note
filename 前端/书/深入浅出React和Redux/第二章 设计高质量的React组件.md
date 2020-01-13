@@ -40,7 +40,7 @@ state
 
 1 componentWillReceiveProps(nextProps)
 
-当父组件的render函数被调用,在render函数里面被渲染的子组件就会经历更新过程,触发此函数
+子组件接受propqie当父组件的render函数被调用,在render函数里面被渲染的子组件就会经历更新过程,触发此函数（第一次存在于父组件中时不触发）
 
 2 shouldComponentUpdate(nextProps, nextState)
 
