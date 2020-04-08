@@ -15,7 +15,7 @@ computed: {
 }
 ```
 
-·```js
+```js
 //数组
 <div v-bind:class="[{ active: isActive }, errorClass]"></div>
 data: {
