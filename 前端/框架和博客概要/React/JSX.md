@@ -12,8 +12,10 @@ const element = <h1>Hello, {name}</h1>;
 对于同一属性不能同时使用这两种符号。
 
 ```js
-const element = <div tabIndex="0"></div>;
+const element = <div tabIndex="0"></div>; // React DOM 使用 camelCase（小驼峰命名）来定义属性的名称
 
 const element = <img src={user.avatarUrl}></img>;
 ```
 3 假如一个标签里面没有内容，你可以使用 /> 来闭合标签
+
+4 Babel 会把 JSX 转译成一个名为 React.createElement() 函数调用(类似render, 执行后同样生成虚拟DOM)
